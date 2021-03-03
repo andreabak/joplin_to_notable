@@ -26,7 +26,7 @@ from typing import (
 
 
 __author__ = "abk16"
-__version__ = "0.0.1-alpha"
+__version__ = "0.0.2-alpha"
 
 
 NOTABLE_NOTES_SUBDIR: str = "notes"
@@ -46,7 +46,7 @@ def dump_dt(dt: datetime) -> str:
     return (
         dt.astimezone(tz=timezone.utc)
         .replace(tzinfo=None)
-        .strftime("%Y-%m-%dT%H:%M:S.%fZ")
+        .strftime("%Y-%m-%dT%H:%M:%S.%fZ")
     )
 
 
